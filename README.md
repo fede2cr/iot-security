@@ -18,3 +18,14 @@ This is a physical security system, designed for detecting human intrussions in 
 - [ ] Easy display of triggered areas
 - [ ] Panic mode for calling for help on other external consoles connected to the system
 - [ ] Archival of events for debugging and for interaction with authorities
+- [ ] LiPo batteries that report charge
+- [ ] Weatherproof devices
+- [ ] Wireless charging
+- [ ] Very low false positives, to increase confidance when alerts happen
+
+## Sensors
+
+For detecting intruding humans, the idea is to use:
+
+- [Human body detection module](https://www.crcibernetica.com/rcwl-0516-human-body-detector-module/): Uses microwaves and doppler effect to sense human presence. Because of heavy transit of other primates (capuchin monkeys and howler monkeys) this has to be tested so that it does not create false positives. Expected range: 5m-7m.
+- [ESP32-cam](https://www.crcibernetica.com/esp32-with-camera/) or IMX462: Cameras that work well at night, either with light control or a low light optimized sensor to capture clear and useful images/video to detect human presence. This images/video should be offloaded for archival and for processing with Microsoft's Megadetector. The face detection features from the ESP32 can also be used, if tested properly with non-human-primates.
